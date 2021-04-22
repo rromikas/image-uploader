@@ -11,6 +11,6 @@ app.options("*", cors());
 
 app.post("/imageToSvg", imageToSvg);
 
-const listener = app.listen(process.env.port, () => {
+const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
